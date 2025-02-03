@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <link rel="icon" href="Imagens/icone.ico" type="image/png">
+    <title>Class Connect</title>
+</head>
+
+<body>
+
+    <!--Início - Cabeçalho-->
+
+    <div class="pai">
+        <header class="MENU">
+
+            <!--Início - Logo-->
+
+            <div id="dlogo">
+                <a href="#home">
+                    <img class="logo" src="Imagens/CC1-2.png">
+                    <img class="logo2" src="Imagens/CC2-2.png">
+                </a>
+            </div>
+
+            <!--Fim - Logo-->
+
+            <!--Início - Menu-->
+
+            <ul class="menu">
+                <li>
+                    <a href="#home">
+                        <div class="botoes" role="button">
+                            <img class="icone" src="Imagens/Home.png">
+                            <img class="icone2" src="Imagens/home2.png">
+                            <div class="txtmenu">Página Inicial</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#pesquisar">
+                        <div class="botoes" role="button">
+                            <img class="icone" src="Imagens/Search.png">
+                            <img class="icone2" src="Imagens/search2.png">
+                            <div class="txtmenu">Pesquisa</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#mensagens">
+                        <div class="botoes" role="button">
+                            <img class="icone" src="Imagens/Messages.png">
+                            <img class="icone2" src="Imagens/messages2.png">
+                            <div class="txtmenu">Mensagens</div>
+                        </div>
+                    </a>
+                </li>
+                <li id="cell">
+                    <a href="#perfil">
+                        <div class="botoes" role="button">
+                            <img class="icone" src="Imagens/Profile.png">
+                            <img class="icone2" src="Imagens/profile2.png">
+                            <div class="txtmenu">Perfil</div>
+                        </div>
+                    </a>
+                </li>
+                <li id="mais">
+                    <div class="botoes" role="button">
+                        <img class="icone" src="Imagens/More.png">
+                        <img class="icone2" src="Imagens/More2.png">
+                        <div class="txtmenu">Mais</div>
+                    </div>
+
+                    <!--Fim - Menu-->
+
+                    <!--Início - Dropdown do "Mais"-->
+
+                    <ul>
+                        <li style="padding-right: 4px;">
+                            Tema
+                            <center>
+                                <input id="toggle" class="toggle" type="checkbox" onclick="whiteMode()">
+                                <label for="toggle"></label>
+                            </center>
+                        </li>
+                    </ul>
+
+                    <!--Fim - Dropdown do "Mais"-->
+
+                </li>
+            </ul>
+
+        </header>
+
+        <!--Fim - Cabeçalho-->
+
+        <!--Início - Página Inicial-->
+
+        <div class="gambiarra">
+        </div>
+
+        <div class="filho">
+
+            <!--Início - Conteúdo do Site-->
+
+            <section>
+
+                <!--Início - Postagens da Página Inicial-->
+
+                <article id="home" class="first show">
+
+                    <div class="filho2">
+
+                        <div class="postmidia">
+                            <div id="barraperfil">
+                                <div class="fotoperfil">
+                                    <img class="fp" src="Imagens/logofortec.jpg">
+                                </div>
+                                <p id="nomeperfil">Fortec</p>
+                            </div>
+                            <div class="midia">
+                                <img class="img" src="Imagens/Postagens/postagem3-1.jpg">
+                            </div>
+                            <div class="ações">
+                                <img src="Imagens/NCurtiu.png" class="curtida" onclick="Curtir(this)">
+                            </div>
+                            <p class="legenda">A Expotec está chegando com toda sua energia criativa e inovadora!
+
+                                E agora é a vez do Ensino Fund II (turma da manhã), Ensino Médio e Cursos Técnicos.
+                                
+                                Dia 06/10, convidamos todos a prestigiarem o talento e a dedicação dos nossos estudantes.
+                                
+                                Venha fazer parte desse evento inspirador e celebrar o conhecimento!</p>
+                        </div>
+                        
+                        <hr class="divisor">
+
+                        <div class="postmidia">
+                            <div id="barraperfil">
+                                <div class="fotoperfil">
+                                    <img class="fp" src="Imagens/logofortec.jpg">
+                                </div>
+                                <p id="nomeperfil">Fortec</p>
+                            </div>
+                            <div class="midia">
+                                <img class="img" src="Imagens/Postagens/postagem1.jpg">
+                            </div>
+                            <div class="ações">
+                                <img src="Imagens/NCurtiu.png" class="curtida" onclick="Curtir(this)">
+                            </div>
+                            <p class="legenda">Preços congelados para 2024! 📣
+
+                                Faça sua matrícula até 29/09 e garanta uma Bolsa de Estudos de 25% e preços congelados
+                                nas Mensalidades 2024 (válido para novos alunos). 📚✏️
+
+                                ✔️ Educação Infantil
+                                ✔️ Ensino Fundamental
+                                ✔️ Ensino Médio/ Técnico: Informática, Mecatrônica,
+                                Administração, Marketing, Design de Interiores e Comércio Exterior.
+
+                                Agende sua visita e conheça toda a estrutura que oferecemos aos nossos alunos.
+
+                                Fortec - 40 anos de experiência na área educacional.</p>
+                        </div>
+
+                        <hr class="divisor">
+
+                        <div class="posttexto">
+                            <div id="barraperfil">
+                                <div class="fotoperfil">
+                                    <img class="fp" src="Imagens/logofortec.jpg">
+                                </div>
+                                <p id="nomeperfil">Fortec</p>
+                            </div>
+
+                            <p class="legenda">Demonstração de uma postagem apenas com texto</p>
+                            <div class="ações">
+                                <img src="Imagens/NCurtiu.png" class="curtida" onclick="Curtir(this)">
+                            </div>
+                        </div>
+
+                        <hr class="divisor">
+
+                        <div class="postmidiaslide">
+                            <div id="barraperfil">
+                                <div class="fotoperfil">
+                                    <img class="fp" src="Imagens/logofortec.jpg">
+                                </div>
+                                <p id="nomeperfil">Fortec</p>
+                            </div>
+
+                            <div class="midiaslide">
+                                <img class="img" src="Imagens/Postagens/postagem2-1.jpg">
+                            </div>
+
+                            <div class="midiaslide">
+                                <img class="img" src="Imagens/Postagens/postagem2-2.jpg">
+                            </div>
+
+                            <div class="midiaslide">
+                                <img class="img" src="Imagens/Postagens/postagem2-3.jpg">
+                            </div>
+
+                            <div class="midiaslide">
+                                <img class="img" src="Imagens/Postagens/postagem2-4.jpg">
+                            </div>
+
+                            <div class="midiaslide">
+                                <img class="img" src="Imagens/Postagens/postagem2-5.jpg">
+                            </div>
+
+                            <div class="midiaslide">
+                                <img class="img" src="Imagens/Postagens/postagem2-6.jpg">
+                            </div>
+
+                            <div class="midiaslide">
+                                <img class="img" src="Imagens/Postagens/postagem2-7.jpg">
+                            </div>
+
+                            <div class="midiaslide">
+                                <img class="img" src="Imagens/Postagens/postagem2-8.jpg">
+                            </div>
+
+                            <div class="midiaslide">
+                                <img class="img" src="Imagens/Postagens/postagem2-9.jpg">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1, this)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, this)">&#10095;</a>
+
+                            <div class="ações">
+                                <img src="Imagens/NCurtiu.png" class="curtida" onclick="Curtir(this)">
+                            </div>
+                            <p class="legenda">Nos dias 04 e 05/09 aconteceram as palestras referentes à Semana de
+                                Administração e Logística, que abordaram temas como 'O Mundo Atual e a Logística' e
+                                'Desafios e o Mercado de Trabalho'.
+
+                                Além de assistir às palestras, os alunos também participaram de dinâmicas interativas,
+                                promovendo um momento de descontração entre colegas.
+                            </p>
+                        </div>
+
+                        <hr class="divisor">
+
+                        <div class="postmidia">
+                            <div id="barraperfil">
+                                <div class="fotoperfil">
+                                    <img class="fp" src="Imagens/logofortec.jpg">
+                                </div>
+                                <p id="nomeperfil">Fortec</p>
+                            </div>
+                            <div class="midia">
+                                <img class="img" src="Imagens/Postagens/postagem4.jpg">
+                            </div>
+                            <div class="ações">
+                                <img src="Imagens/NCurtiu.png" class="curtida" onclick="Curtir(this)">
+                            </div>
+                            <p class="legenda">A Fortec acredita no potencial único de cada aluno e incentiva a participação nessas atividades para um caminho ainda mais enriquecedor e reconhece a importância das modalidades extracurriculares no desenvolvimento dos alunos.
+
+                                Nossa instituição oferece diversas opções, como Balé, Capoeira, Ginástica Rítmica, Karatê, Dança e Movimento*, Crossfit Kids* e Futsal*.
+                                
+                                Essas atividades enriquecem a experiência educacional, promovendo habilidades físicas, sociais e emocionais.
+                                
+                                As modalidades com * estão disponíveis exclusivamente na unidade Frei Gaspar.
+                                
+                                Para mais informações, os interessados devem entrar em contato com a coordenação de sua unidade.</p>
+                        </div>
+
+                        <hr class="divisor">
+
+                        <div class="postmidia">
+                            <div id="barraperfil">
+                                <div class="fotoperfil">
+                                    <img class="fp" src="Imagens/logofortec.jpg">
+                                </div>
+                                <p id="nomeperfil">Fortec</p>
+                            </div>
+                            <div class="midia">
+                                <img class="img" src="Imagens/Postagens/postagem5.jpg">
+                            </div>
+                            <div class="ações">
+                                <img src="Imagens/NCurtiu.png" class="curtida" onclick="Curtir(this)">
+                            </div>
+                            <p class="legenda">Quer entrar no mercado de trabalho se destacando e alcançando as melhores oportunidades? Então venha para a Fortec!
+
+                                Cursos técnicos EAD com duração de 12 a 18 meses!
+                                
+                                Saiba mais em fortec.edu.br
+                                
+                                Ensino Forte é na Fortec!</p>
+                        </div>
+
+                        <hr class="divisor">
+
+                        <div class="postmidia">
+                            <div id="barraperfil">
+                                <div class="fotoperfil">
+                                    <img class="fp" src="Imagens/logofortec.jpg">
+                                </div>
+                                <p id="nomeperfil">Fortec</p>
+                            </div>
+                            <div class="midia">
+                                <img class="img" src="Imagens/Postagens/postagem6.jpg">
+                            </div>
+                            <div class="ações">
+                                <img src="Imagens/NCurtiu.png" class="curtida" onclick="Curtir(this)">
+                            </div>
+                            <p class="legenda">Fique ligado! A semana de provas chegou! ⚠️
+
+                                As provas serão realizadas de 25/09 a 05/10 para as turmas do Ensino Fundamental e de 25/09 até 04/10 para o Ensino Médio.
+                                
+                                Mais informações serão enviadas nos grupos de WhatsApp das respectivas classes.</p>
+                        </div>
+
+                        <hr class="divisor">
+
+                        <div class="postmidia">
+                            <div id="barraperfil">
+                                <div class="fotoperfil">
+                                    <img class="fp" src="Imagens/logofortec.jpg">
+                                </div>
+                                <p id="nomeperfil">Fortec</p>
+                            </div>
+                            <div class="midia">
+                                <img class="img" src="Imagens/Postagens/postagem7.jpg">
+                            </div>
+                            <div class="ações">
+                                <img src="Imagens/NCurtiu.png" class="curtida" onclick="Curtir(this)">
+                            </div>
+                            <p class="legenda">Matrículas abertas! 🚀
+
+                                Você tem vontade de aprender a fazer doces e se tornar um Confeiteiro?🎸
+                                
+                                Chegou a sua hora de fazer nosso curso de Confeitaria, um curso rápido, acessível e focado. Ao final do curso você ganhará um certificado e já poderá se tornar um Microempreendedor!
+                                
+                                Matricule-se já e aprenda a fazer e confeitar os melhores doces. Aqui no Projeto Beija-Flor você pode e consegue!
+                                
+                                📍Endereço: R. Cândido Rodrigues, 304 - Centro, São Vicente – SP
+                                (13) 98103-9408</p>
+                        </div>
+
+                        <hr class="divisor">
+
+                        <div class="postmidia">
+                            <div id="barraperfil">
+                                <div class="fotoperfil">
+                                    <img class="fp" src="Imagens/logofortec.jpg">
+                                </div>
+                                <p id="nomeperfil">Fortec</p>
+                            </div>
+                            <div class="midia">
+                                <img class="img" src="Imagens/Postagens/postagem8.jpg">
+                            </div>
+                            <div class="ações">
+                                <img src="Imagens/NCurtiu.png" class="curtida" onclick="Curtir(this)">
+                            </div>
+                            <p class="legenda">Já estão abertas as matrículas para os Cursos Técnicos 2024! 🤩
+                                Essa é a sua oportunidade de fazer um Curso Técnico e ingressar no Mercado de trabalho rapidamente com valores promocionais.
+                                
+                                Faça sua inscrição até 29/09 e garanta preços congelados nas mensalidades em 2024‼️
+                                
+                                São 15 cursos técnicos com duração de 12 a 18 meses que te colocam rapidamente no mercado de trabalho.
+                                
+                                Não perca essa chance!
+                                </p>
+                        </div>
+
+                        <hr class="divisor">
+
+                        <div class="postmidia">
+                            <div id="barraperfil">
+                                <div class="fotoperfil">
+                                    <img class="fp" src="Imagens/logofortec.jpg">
+                                </div>
+                                <p id="nomeperfil">Fortec</p>
+                            </div>
+                            <div class="midia">
+                                <img class="img" src="Imagens/Postagens/postagem9.jpg">
+                            </div>
+                            <div class="ações">
+                                <img src="Imagens/NCurtiu.png" class="curtida" onclick="Curtir(this)">
+                            </div>
+                            <p class="legenda">O Dia do Técnico Industrial é uma homenagem aos profissionais essenciais na era da evolução industrial, responsáveis por automatizar máquinas e contribuir para o funcionamento das indústrias.
+
+                                Nossos cursos de Automação Industrial, Mecânica, Mecatrônica e Eletromecânica preparam profissionais para grandes desafios, oferecendo formação teórica e prática por professores experientes.
+                                
+                                Parabéns aos técnicos industriais e aos nossos alunos que trilham esse caminho!</p>
+                        </div>
+
+                        <hr class="divisor">
+
+                        <div class="postmidia">
+                            <div id="barraperfil">
+                                <div class="fotoperfil">
+                                    <img class="fp" src="Imagens/logofortec.jpg">
+                                </div>
+                                <p id="nomeperfil">Fortec</p>
+                            </div>
+                            <div class="midia">
+                                <img class="img" src="Imagens/Postagens/postagem10.jpg">
+                            </div>
+                            <div class="ações">
+                                <img src="Imagens/NCurtiu.png" class="curtida" onclick="Curtir(this)">
+                            </div>
+                            <p class="legenda">O Dia Nacional da Servente Escolar é uma oportunidade especial para reconhecer e agradecer o trabalho realizado por essas profissionais tão importantes.
+
+                                São elas que mantêm nossos ambientes limpos e organizados, contribuindo para o bem-estar de todos.
+                                
+                                Neste dia, expressamos nossa gratidão pelo seu comprometimento e esforço.
+                                
+                                Parabéns!</p>
+                        </div>
+
+                        <hr class="divisor">
+
+                        <div class="postmidia">
+                            <div id="barraperfil">
+                                <div class="fotoperfil">
+                                    <img class="fp" src="Imagens/logofortec.jpg">
+                                </div>
+                                <p id="nomeperfil">Fortec</p>
+                            </div>
+                            <div class="midia">
+                                <img class="img" src="Imagens/Postagens/postagem11.jpg">
+                            </div>
+                            <div class="ações">
+                                <img src="Imagens/NCurtiu.png" class="curtida" onclick="Curtir(this)">
+                            </div>
+                            <p class="legenda">A entrada da Primavera traz consigo uma explosão de cores e vida na estação que as flores desabrocham e a natureza se renova.
+
+                                É um momento marcado pelo retorno do calor e das atividades ao ar livre, celebrando a beleza e a vitalidade da época. A primavera nos lembra da constante renovação da vida na Terra e nos enche de inspiração e alegria.</p>
+                        </div>
+
+                        <hr class="divisor">
+
+                        <div class="postmidia">
+                            <div id="barraperfil">
+                                <div class="fotoperfil">
+                                    <img class="fp" src="Imagens/logofortec.jpg">
+                                </div>
+                                <p id="nomeperfil">Fortec</p>
+                            </div>
+                            <div class="midia">
+                                <img class="img" src="Imagens/Postagens/postagem12.jpg">
+                            </div>
+                            <div class="ações">
+                                <img src="Imagens/NCurtiu.png" class="curtida" onclick="Curtir(this)">
+                            </div>
+                            <p class="legenda">As inscrições para o Vestibular 2024 já estão abertas!
+                                Venha para a Fatef e garanta mensalidades com preços congelados para 2024, fazendo sua matrícula até 29/09.
+                                Realize o sonho de estudar em uma faculdade de qualidade e com valores acessíveis.</p>
+                        </div>
+
+                        <hr class="divisor">
+
+                        <div class="postmidia">
+                            <div id="barraperfil">
+                                <div class="fotoperfil">
+                                    <img class="fp" src="Imagens/logofortec.jpg">
+                                </div>
+                                <p id="nomeperfil">Fortec</p>
+                            </div>
+                            <div class="midia">
+                                <img class="img" src="Imagens/Postagens/postagem13.jpg">
+                            </div>
+                            <div class="ações">
+                                <img src="Imagens/NCurtiu.png" class="curtida" onclick="Curtir(this)">
+                            </div>
+                            <p class="legenda">Dia Nacional de Luta da Pessoa com Deficiência!
+
+                                Esta data é dedicada à conscientização sobre os desafios enfrentados pelas pessoas com deficiência e à promoção de seus direitos e inclusão na sociedade.
+                                
+                                É uma oportunidade para destacar a importância da acessibilidade e igualdade de oportunidades para todas as pessoas, independentemente de suas habilidades ou limitações.
+                                
+                                Tendo como um de seus pilares a Responsabilidade Social, a Fortec realiza o Projeto Social Tampinha Solidária, que tem como proposta a arrecadação de tampinhas de plástico, que são vendidas e o dinheiro arrecadado é revertido na compra de cadeira de rodas para pessoas com deficiência que precisam e não tem condições de adquirí-las.</p>
+                        </div>
+
+                        <hr class="divisor">
+
+                        <div class="postmidia">
+                            <div id="barraperfil">
+                                <div class="fotoperfil">
+                                    <img class="fp" src="Imagens/logofortec.jpg">
+                                </div>
+                                <p id="nomeperfil">Fortec</p>
+                            </div>
+                            <div class="midia">
+                                <img class="img" src="Imagens/Postagens/postagem14.jpg">
+                            </div>
+                            <div class="ações">
+                                <img src="Imagens/NCurtiu.png" class="curtida" onclick="Curtir(this)">
+                            </div>
+                            <p class="legenda">Venha fazer parte da Equipe Fortec!
+
+                                Vagas disponíveis para:
+                                
+                                • Auxiliar Financeiro
+                                • Professor de Artes
+                                • Estagiário de Exatas
+                                • Estagiário de Letras
+                                
+                                Requisitos:
+                                
+                                Auxiliar Financeiro: Superior completo e experiência mínima de um ano e meio.
+                                
+                                Professor de Artes: Licenciatura em Artes e experiência mínima lecionando de um ano e meio.
+                                
+                                Estagiário de Exatas: Cursando Biologia, Matemática, Química ou Física e residir em São Vicente/SP
+                                
+                                Estagiário de Letras: Cursando Letras e residir em São Vicente/SP
+                                
+                                Enviar currículo no e-mail vagas@fortec.edu.br com a vaga no título.</p>
+                        </div>
+
+                </article>
+
+                <!--Fim - Postagens da Página Inicial-->
+
+                <!--Início - Aba de pesquisa-->
+
+                <article id="pesquisar">
+
+                    <!--Início - Barra de pesquisa-->
+
+                    <div class="barra">
+                        <div class="barra-container">
+                            <input type="text" id="barra-pesquisa" placeholder="Pesquisar..." maxlength="34">
+                        </div>
+                    </div>
+
+                    <!--Fim - Barra de pesquisa-->
+
+                    <!--Início - Perfil pesquisa pesquisar-->
+
+                    <ul id="resultado-pesquisa" class="resultado-pesquisa">
+                        <!-- Os resultados da pesquisa serão exibidos aqui -->
+                    </ul>
+
+                    <div id="popup-container" class="popup-container">
+                        <div class="popup-content">
+                          <div id="popup-close" class="popup-close">×</div>
+                          <img id="popup-photo" class="popup-photo" src="" alt="">
+                          <div id="popup-name" class="popup-name"></div>
+                          <hr style="background-color: white; height: 2px; border: 0;">
+                          <div id="popup-bio" class="popup-bio"></div>
+                          <button type="button" id="botaoAmigo" class="btnperfil" onclick="Adicionar()">Adicionar amigo</button>
+                          <button type="button" class="btnperfil">Enviar mensagem</button>
+                        </div>
+                      </div>
+
+                    <!--Fim - Perfil pesquisa pesquisar-->
+
+                </article>
+
+                <!--Fim - Aba de pesquisa-->
+
+                <!--Início - Aba de Mensagens-->
+
+                <article id="mensagens">
+
+                    <div class="filho4">
+
+                        <!--Início - Conversas-->
+
+                        <div class="messages-container">
+                            <div class="conversation-list">
+                                <div class="conversation" data-user="user1">
+                                    <div class="conversation-info">
+                                        <img src="Imagens/Screenshot_20230911_020010_Instagram.jpg">
+                                        <h3>Samuel</h3>
+                                    </div>
+                                </div>
+
+                                <div class="conversation" data-user="user2">
+                                    <div class="conversation-info">
+                                        <img src="Imagens/Screenshot_20230911_104759_Instagram.jpg">
+                                        <h3>Dennis</h3>
+                                    </div>
+                                </div>
+
+                                <div class="conversation" data-user="user3">
+                                    <div class="conversation-info">
+                                        <img src="Imagens/Screenshot_20230920_010326_Instagram.jpg">
+                                        <h3>Breno</h3>
+                                    </div>
+                                </div>
+
+                                <div class="conversation" data-user="user4">
+                                    <div class="conversation-info">
+                                        <img src="Imagens/Screenshot_20230922_230139_Instagram.jpg">
+                                        <h3>Davi</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Fim - Conversas-->
+
+                            <!--Início - Histórico de mensagens-->
+
+                            <div class="message-box">
+                                <div class="message-history" id="message-history">
+                                    <!--Mensagens aqui-->
+                                </div>
+
+                                <!--Fim - Histórico de mensagens-->
+
+                                <!--Início - Textarea e Botão Enviar-->
+
+                                <div class="message-input">
+                                    <textarea id="message" placeholder="Digite sua mensagem" style="resize: none;"
+                                        cols="30" rows="1"></textarea>
+                                    <button id="send">Enviar</button>
+                                    <button id="send2">></button>
+                                </div>
+
+                                <!--Fim - Textarea e Botão Enviar-->
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!--Fim - Aba de Mensagens-->
+
+                <!--Início - Aba do Perfil-->
+
+                <article id="perfil">
+                    <div class="filho config-main">
+
+
+                        <h1 class="config-title">Editar Perfil</h1>
+
+
+                        <form action="" class="config-form">
+                            <!-- Profile Input -->
+                            <div class="config-form_first-row">
+                                <div class="config-form_input-label">
+                                    <img class="config-form_profile-img" src="Imagens/Profile.png">
+                                </div>
+                                <div class="config-form_input">
+                                    <label for="select-image">Alterar foto de perfil</label>
+                                    <input type="file" name="select-image" id="select-image" accept="image/*">
+                                </div>
+                            </div>
+                            <!--Nome Input-->
+                            <div class="config-form_row">
+                                <div class="config-form_input-label">
+                                    <label for="site">Nome</label>
+                                </div>
+                                <div class="config-form_input">
+                                    <input type="url" name="site" id="site" placeholder="Nome">
+                                </div>
+                            </div>
+                            <!--Biography Input-->
+                            <div class="config-form_row">
+                                <div class="config-form_input-label">
+                                    <label for="bio">Biografia</label>
+                                </div>
+                                <div class="config-form_input">
+                                    <textarea name="bio" id="bio" cols="30" rows="4" placeholder="Biografia"
+                                        maxlength="140" style="resize: none;"></textarea>
+                                </div>
+                            </div>
+                            <!--Gender Input-->
+                            <div class="config-form_row">
+                                <div class="config-form_input-label">
+                                    <label for="gender">Gênero</label>
+                                </div>
+                                <div class="config-form_input">
+                                    <select name="gender" id="gender">
+                                        <option value="outro">Outro</option>
+                                        <option value="feminino">Feminino</option>
+                                        <option value="masculino">Masculino</option>
+                                        <option value="nao-informar">Prefiro não informar</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!--Button-->
+                            <div class="config-form_row">
+                                <button class="config-button" type="button">Alterar</button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </article>
+
+                <!--Fim - Aba do Perfil-->
+
+            </section>
+
+            <!--Fim - Conteúdo do Site-->
+
+        </div>
+    </div>
+
+    <!--Fim - Página Inicial-->
+
+    <!--Início - Chamando arquivo JavaScript-->
+
+    <script type="text/javascript" src="JS/config.js"></script>
+
+    <!--Fim - Chamando arquivo JavaScript-->
+
+    </div>
+
+</body>
+
+</html>

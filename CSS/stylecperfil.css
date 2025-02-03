@@ -1,0 +1,226 @@
+body {
+    margin: 0px;
+}
+
+.pai {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.filho {
+    width: 650px;
+    height: 350px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: left;
+    border-radius: 20px;
+    box-shadow: 3px 2px 6px 1px #424242;
+}
+
+.foto {
+    width: 250px;
+    height: 250px;
+    border: 2px solid #b8b4b4;
+    border-radius: 360px;
+    margin: 40px;
+    background: #cfcfcf;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+}
+
+.foto:hover {
+    background-color: #b8b4b4;
+    border: 2px solid #757575;
+}
+
+.escolherfoto {
+    display: none;
+    border-radius: 360px;
+}
+
+#semfoto {
+    width: 250px;
+    height: 250px;
+    border-radius: 360px;
+}
+
+.foto:hover #semfoto {
+    display: none;
+}
+
+#txtfoto {
+    display: none;
+    color: #424242;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+}
+
+.foto:hover #txtfoto {
+    display: flex;
+}
+
+.texto {
+    color: gray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+}
+
+.campo {
+    margin: 3px 0px 0px 25px;
+    border-radius: 3px;
+    border-style: solid;
+    font-size: 13px;
+    background-color: #cfcfcf;
+    border-color: #b8b4b4;
+    width: 240px;
+    height: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.campo:focus {
+    outline-color: #757575;
+}
+
+.bio {
+    margin: 3px 0px 0px 25px;
+    padding: 3px;
+    border-radius: 3px;
+    border-style: solid;
+    font-size: 13px;
+    background-color: #cfcfcf;
+    border-color: #b8b4b4;
+    width: 240px;
+    height: 120px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#contador {
+    margin-left: 235px;
+}
+
+#contador2 {
+    margin-left: 228px;
+}
+
+.cadastrar {
+    width: 248px;
+    height: 25px;
+    margin: 10px 0px 0px 25px;
+    color: white;
+    background-color: #2e82f0;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.cadastrar:hover {
+    background-color: #16488a;
+}
+
+.voltar {
+    width: 50px;
+    height: 25px;
+    background-color: #2e82f0;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+    color: white;
+}
+
+.voltar:hover { 
+    background-color: #16488a;
+}
+
+#vol {
+    position: absolute;
+    margin-left: 20px;
+    margin-bottom: 290px;
+}
+
+.remover {
+    width: 100px;
+    height: 25px;
+    background-color: #2e82f0;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    margin-left: 117px;
+    margin-top: 300px;
+}
+
+.remover:hover { 
+    background-color: #16488a;
+}
+
+@media screen and (max-width: 600px) {
+	
+	.filho {
+		width: 300px;
+		height: 500px;
+		flex-direction: column;
+	}
+	
+	.foto {
+		width: 150px;
+		height: 150px;
+		margin: 20px;
+	}
+
+	#semfoto {
+		width: 150px;
+		height: 150px;
+	}
+
+	.campo {
+		width: 200px;
+		height: 30px;
+		margin: 30px 0px 0px 5px;
+	}
+
+	.bio {
+		width: 200px;
+		height: 120px;
+		margin: 3px 0px 0px 5px;
+	}
+
+	#contador {
+		margin-left: 177px;
+	}
+
+	#contador2 {
+		margin-left: 170px;
+	}
+
+	.cadastrar {
+		width: 208px;
+		height: 25px;
+		margin: 3px 0px 0px 5px;
+	}
+
+	#vol {
+		position: absolute;
+		margin-right: 230px;
+		margin-left: 0px;
+		margin-bottom: 0px;
+		margin-top: 10px;
+	}
+
+	.remover {
+		width: 100px;
+		height: 25px;
+		margin-left: 0px;
+		margin-top: 185px;
+	}
+}

@@ -1,0 +1,1366 @@
+/*Início - Modo Escuro*/
+
+/*Início - Configuração da página
+(fundo preto)
+(letra branca)*/
+
+body {
+    margin: 0px;
+    background-color: black;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.pai {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+}
+
+.filho {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+/*Fim - Configuração da página
+(fundo preto)
+(letra branca)*/
+
+
+/*Início - Configuração do header*/
+
+header {
+    position: fixed;
+    font-size: 18px;
+    display: table;
+    width: 20%;
+    height: 100%;
+    border: 0px;
+    border-right: 1px;
+    border-color: gray;
+    border-style: solid;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 8px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Início - Configuração da div da logo*/
+
+#dlogo {
+    height: 60px;
+    padding-left: 15px;
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+
+/*Fim - Configuração da div da logo*/
+
+
+/*Início - Configuração dos botões
+(ícones branco)
+(texto branco)*/
+
+.botoes {
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+}
+
+.botoes:hover {
+    background-color: #454545;
+    border-radius: 7px;
+    height: 40px;
+    max-width: 95%;
+    font-weight: bold;
+}
+
+.icone {
+    padding-top: 12px;
+    margin-left: 14px;
+    margin-right: 15px;
+    height: 25px;
+    width: 25px;
+}
+
+.botoes:hover .icone {
+    padding-top: 12px;
+    margin-left: 14px;
+    margin-right: 15px;
+    height: 27px;
+    width: 27px;
+}
+
+.txtmenu {
+    position: relative;
+    display: inline;
+    bottom: 5px;
+}
+
+/*Fim - Configuração dos botões
+(ícones branco)
+(texto branco)*/
+
+
+/*Início - Desativa os ícones pretos*/
+
+.icone {
+    display: none;
+    padding-top: 12px;
+    margin-left: 14px;
+    margin-right: 15px;
+    height: 25px;
+    width: 25px;
+}
+
+.logo {
+    display: none;
+    height: 40px;
+}
+
+.logo:hover {
+    display: none;
+    height: 45px;
+}
+
+/*Fim - Desativa os ícones pretos*/
+
+
+/*Início - Configuração do botão "Mais"*/
+
+/*Início - Botão "Mais" no bottom da página*/
+
+#mais {
+    position: absolute;
+    bottom: 15px;
+    width: 95%;
+    cursor: pointer;
+}
+
+/*Fim - Botão "Mais" no bottom da página*/
+
+
+/*Início - Configuração do dropdown "Mais"*/
+
+.menu li ul {
+    position: absolute;
+    bottom: 58px;
+    left: 0px;
+    display: none;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    cursor: default;
+}
+
+.menu li:hover ul,
+.menu li.over ul {
+    display: block;
+}
+
+.menu li ul li {
+    display: block;
+    width: 126px;
+    margin: 5px;
+}
+
+/*Fim - Configuração do dropdown "Mais"*/
+
+
+/*Início - Configuração do switch (modo de cor)*/
+
+.toggle {
+    display: none;
+}
+
+.toggle+label {
+    width: 32px;
+    height: 20px;
+    background: lightgray;
+    display: block;
+    position: relative;
+    border-radius: 20px;
+    padding: 2px;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.toggle+label:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    display: block;
+    border-radius: 50%;
+    right: unset;
+    left: 2px;
+    top: 2px;
+    transition: 200ms;
+}
+
+.toggle:checked+label {
+    background: black;
+}
+
+.toggle:checked+label:before {
+    content: '';
+    left: calc(100% - 22px);
+    box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+}
+
+/*Fim - Configuração do switch (modo de cor)*/
+
+
+/*Início - Configuração dos ícones brancos*/
+
+.logo2 {
+    height: 40px;
+}
+
+.logo2:hover {
+    height: 45px;
+}
+
+.icone2 {
+    padding-top: 12px;
+    margin-left: 14px;
+    margin-right: 15px;
+    height: 25px;
+    width: 25px;
+}
+
+.botoes:hover .icone2 {
+    padding-top: 12px;
+    margin-left: 14px;
+    margin-right: 15px;
+    height: 27px;
+    width: 27px;
+}
+
+/*Fim - Configuração dos ícones brancos*/
+
+/*Fim - Configuração do header*/
+
+/*Fim - Modo Escuro*/
+
+
+
+/*Início - Modo Claro*/
+
+/*Início - Configuração da página
+(fundo preto para branco)
+(texto branco para preto)*/
+
+.white-mode {
+    background-color: white;
+    color: black;
+}
+
+/*Fim - Configuração da página
+(fundo preto para branco)
+(texto branco para preto)*/
+
+
+/*Início - Desativa os ícones brancos*/
+
+.white-mode .icone2 {
+    display: none;
+}
+
+.white-mode .logo2 {
+    display: none;
+}
+
+/*Fim - Desativa os ícones brancos*/
+
+
+/*Início - Configuração do header (botões)*/
+
+.white-mode header ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.white-mode .menu li ul {
+    background-color: #969696;
+}
+
+.white-mode .icone {
+    display: inline;
+}
+
+.white-mode .logo {
+    display: inline;
+}
+
+.white-mode .botoes:hover {
+    background-color: #b3b1b1;
+}
+
+/*Fim - Configuração do header (botões)*/
+
+/*Fim - Modo Claro*/
+
+
+/*Início - Responsividade do site*/
+
+/*Início - Responsividade - Celulares (ícones brancos)*/
+
+@media screen and (max-width: 600px) {
+
+    .logo2 {
+        display: none;
+    }
+
+    .logo2:hover {
+        display: none;
+    }
+
+    .icone2 {
+        padding-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: 23px;
+        width: 23px;
+    }
+
+    .botoes:hover .icone2 {
+        padding-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: 23px;
+        width: 23px;
+    }
+
+    .logo2 {
+        display: none;
+    }
+
+    .logo2:hover {
+        display: none;
+    }
+}
+
+/*Fim - Responsividade - Celulares (ícones brancos)*/
+
+
+/*Início - Responsividade - Tablet (ícones pretos)*/
+
+@media screen and (max-width: 860px) {
+    .txtmenu {
+        display: none;
+    }
+
+    header {
+        width: 8%;
+    }
+
+    #mais {
+        width: 86%;
+    }
+}
+
+/*Fim - Responsividade - Tablet (ícones pretos)*/
+
+
+/*Início - Responsividade - Celulares (ícones pretos)*/
+
+@media screen and (max-width: 600px) {
+    .txtmenu {
+        display: none;
+    }
+
+    header {
+        display: inline-block;
+        width: 100%;
+        height: 9%;
+        border: 0px;
+        border-top: 1px;
+        border-color: gray;
+        border-style: solid;
+        bottom: 0px;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header ul {
+        padding: 0px;
+    }
+
+    header ul li {
+        float: left;
+    }
+
+    #dlogo {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo:hover {
+        display: none;
+    }
+
+    #mais {
+        display: none;
+    }
+
+    .botoes {
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+
+    .icone {
+        padding-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: 23px;
+        width: 23px;
+    }
+
+    .botoes:hover .icone {
+        padding-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: 23px;
+        width: 23px;
+    }
+
+    .botoes:hover {
+        background-color: black;
+        border-radius: 0px;
+        height: 0px;
+        margin-bottom: 19px;
+    }
+
+    #cell {
+        margin-right: 40px;
+    }
+}
+
+/*Fim - Responsividade - Celulares (ícones pretos)*/
+
+
+/*Início - Responsividade - Mínimo (geral)*/
+
+@media screen and (max-width: 255px) {
+    body {
+        display: none;
+    }
+}
+
+/*Fim - Responsividade - Mínimo (geral)*/
+
+
+/*Início - Configuração do ScrollBar*/
+
+body::-webkit-scrollbar {
+    width: 14px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #4f4f4f;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #696969;
+    border: 2px solid #4f4f4f;
+}
+
+/*Fim - Configuração do ScrollBar*/
+
+
+/*Início - Troca de Abas*/
+
+section article {
+    display: none;
+}
+
+section article.show {
+    display: inherit;
+}
+
+/*Fim - Troca de Abas*/
+
+
+/*Início - Aba Inicial*/
+
+.filho2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 37vw;
+    height: 100%;
+    text-align: left;
+}
+
+/*Início - Centralização das Postagens*/
+
+.postmidia {
+    position: relative;
+    display: inline-block;
+    max-width: 40%;
+    max-height: 80%;
+    text-align: left;
+    padding: 5px;
+}
+
+/*Fim - Centralização das Postagens*/
+
+/*Início - Imagem única - Postagem*/
+
+.midia {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 500px;
+    height: 500px;
+    background-color: #1f1f1f;
+    border-radius: 5px;
+}
+
+/*Fim - Imagem única - Postagem*/
+
+/*Início - Imagem múltipla - Postagem*/
+
+.postmidiaslide {
+    position: relative;
+    display: inline-block;
+    max-width: 40%;
+    max-height: 80%;
+    text-align: left;
+    padding: 5px;
+}
+
+.midiaslide {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 500px;
+    height: 500px;
+    background-color: #1f1f1f;
+    border-radius: 5px;
+}
+
+/*Início - Botões próximo e anterior*/
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 37%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 360px;
+    user-select: none;
+    margin-left: 3px;
+}
+
+.next {
+    margin-left: 454px;
+    border-radius: 360px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.349);
+}
+
+/*Fim - Botões próximo e anterior*/
+
+/*Fim - Imagem múltipla - Postagem*/
+
+/*Início - Divisor horizontal entre posts*/
+
+.divisor {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 500px;
+    border-color: #383838;
+}
+
+/*Fim - Divisor horizontal entre posts*/
+
+/*Início - Botão de curtir*/
+
+.ações {
+    width: 100%;
+}
+
+.curtida {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+/*Fim - Botão de curtir*/
+
+/*Início - Legenda abaixo do post*/
+
+.legenda {
+    width: 500px;
+    text-align: justify;
+}
+
+/*Fim - Legenda abaixo do post*/
+
+/*Início - Configuração das imagens no post*/
+
+.img {
+    max-width: 100%;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+/*Fim - Configuração das imagens no post*/
+
+/*Início - Informações de quem fez a postagem*/
+
+#barraperfil {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.fotoperfil {
+    margin-right: 6px;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 360px;
+}
+
+.fp {
+    width: 25px;
+    height: 25px;
+    border-radius: 360px;
+}
+
+#nomeperfil {
+    display: flex;
+    position: relative;
+    margin: 0px;
+}
+
+/*Fim - Informações de quem fez a postagem*/
+
+/*Início - Gambiarra*/
+
+.gambiarra {
+    width: 340px;
+    height: 100vh;
+    text-align: right;
+}
+
+/*Fim - Gambiarra*/
+
+/*Início - Postagem apenas com texto*/
+
+.posttexto {
+    position: relative;
+    display: inline-block;
+    max-width: 40%;
+    max-height: 80%;
+    text-align: left;
+    padding: 5px;
+}
+
+/*Fim - Postagem apenas com texto*/
+
+
+/*Início - Responsividade - Aba Inicial*/
+
+@media screen and (max-width: 1024px) {
+    .gambiarra {
+        width: 259px;
+        height: 100vh;
+    }
+
+    .filho2 {
+        width: 500px;
+    }
+}
+
+/*Início - Responsividade - Tablet - Aba Inicial*/
+
+@media screen and (max-width: 860px) {
+    .gambiarra {
+        width: 70px;
+        height: 100vh;
+    }
+
+    .filho2 {
+        width: 500px;
+    }
+}
+
+/*Fim - Responsividade - Tablet - Aba Inicial*/
+
+
+/*Início - Responsividade - Celulares - Aba Inicial*/
+
+@media screen and (max-width: 600px) {
+    .gambiarra {
+        display: none;
+    }
+
+    header {
+        z-index: 100000;
+        background-color: black;
+    }
+
+    .menu {
+        margin-left: 20%;
+    }
+
+    .midia {
+        width: 400px;
+        height: 400px;
+    }
+
+    .midiaslide {
+        width: 400px;
+        height: 400px;
+    }
+
+    .prev, .next {
+        top: 33%;
+    }
+
+    .next {
+        margin-left: 355px;
+    }
+
+    .divisor {
+        width: 400px;
+        margin-right: 90px;
+    }
+
+    .img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .legenda {
+        width: 400px;
+    }
+
+    .filho2 {
+        margin-left: 70px;
+    }
+}
+
+/*Fim - Responsividade - Celulares - Aba Inicial*/
+
+/*Fim - Responsividade - Aba Inicial*/
+
+/*Fim - Aba Inicial*/
+
+
+/*Início - Aba Pesquisar*/
+
+/*Início - Barra de pesquisa*/
+
+.barra {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    display: flex;
+    left: 550px;
+    top: 10px;
+}
+
+.barra-container {
+    width: 600px;
+}
+
+input#barra-pesquisa {
+    width: 600px;
+    height: 45px;
+    font-size: 1rem;
+    border-radius: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    outline: none;
+}
+
+/*Fim - Barra de pesquisa*/
+
+/*Início - Perfil pesquisar*/
+
+.resultado-pesquisa {
+    list-style: none;
+}
+
+.perfil-container {
+    height: 102px;
+    width: 430px;
+    border-radius: 20px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-top: 70px;
+    cursor: pointer;
+}
+
+.fotoperfil1 {
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    border: 1px solid white;
+    margin-top: 5px;
+}
+
+.txtperfil {
+    width: 320px;
+    position: relative;
+    display: inline;
+    bottom: -40px;
+    left: 10px;
+}
+
+.white-mode .perfil-container {
+    border: 1px solid black;
+}
+
+/*Fim - Perfil pesquisa pesquisar*/
+
+
+/*Início - Responsividade - Aba Pesquisar*/
+
+@media screen and (max-width: 1024px) {
+    .barra {
+        left: 320px;
+    }
+}
+
+/*Início - Responsividade - Tablet (ícones pretos)*/
+
+@media screen and (max-width: 860px) {
+    .barra {
+        left: 120px;
+    }
+}
+
+/*Fim - Responsividade - Tablet (ícones pretos)*/
+
+
+/*Início - Responsividade - Celulares (ícones pretos)*/
+
+@media screen and (max-width: 600px) {
+    .barra {
+        left: 15px;
+    }
+
+    .barra-container {
+        width: 390px;
+    }
+
+    input#barra-pesquisa {
+        width: 390px;
+    }
+}
+
+/*Fim - Responsividade - Celulares (ícones pretos)*/
+
+/*Fim - Responsividade - Aba Pesquisar*/
+
+
+/*Fim - Aba Pesquisar*/
+
+
+/*Início - Aba de Mensagens*/
+
+.filho4 {
+    bottom: 20px;
+    text-align: left;
+}
+
+/*Início - Menu de Conversas*/
+
+.messages-container {
+    display: flex;
+    height: 100vh;
+}
+
+.conversation-list::-webkit-scrollbar {
+    display: none;
+}
+
+.conversation-list {
+    flex: 0.4;
+    border-right: 1px solid gray;
+    overflow-y: auto;
+}
+
+.conversation {
+    display: flex;
+    padding: 3px;
+    border-bottom: 1px solid gray;
+    align-items: center;
+    cursor: pointer;
+}
+
+.conversation:hover {
+    background-color: gray;
+}
+
+.conversation img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 1px solid white;
+}
+
+.conversation-info {
+    flex: 1;
+    display: flex;
+}
+
+/*Fim - Menu de Conversas*/
+
+/*Início - Histórico de Mensagens*/
+
+.message-history::-webkit-scrollbar {
+    width: 14px;
+}
+
+.message-history::-webkit-scrollbar-track {
+    background: #4f4f4f;
+}
+
+.message-history::-webkit-scrollbar-thumb {
+    background-color: #696969;
+    border: 2px solid #4f4f4f;
+}
+
+.message-box {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.message-history {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+}
+
+/*Fim - Histórico de Mensagens*/
+
+/*Início - Entrada de Texto p/ Mensagem*/
+
+/*Início - Textarea*/
+
+.message {
+    padding: 7px 12px;
+    margin: 4px;
+    border-radius: 20px;
+}
+
+.message-input {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#message {
+    flex: 1;
+    padding: 7px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    word-break: break-all;
+    overflow-y: auto;
+    min-height: 15px;
+    max-height: 100px;
+}
+
+/*Fim - Textarea*/
+
+/*Fim - Entrada de Texto p/ Mensagem*/
+
+/*Início - Mensagens recebidas e enviadas*/
+
+.sent {
+    background-color: #0099ff;
+    color: #fff;
+    align-self: flex-end;
+    word-break: break-word;
+    max-width: 70%;
+}
+
+.received {
+    background-color: #e4e4e4;
+    color: #000;
+    align-self: flex-start;
+}
+
+#send {
+    margin-left: 16px;
+    padding: 8px 16px;
+    background-color: #0099ff;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#send:hover {
+    background-color: #0077cc;
+}
+
+#send2 {
+    margin-left: 4px;
+    padding: 6px 10px;
+    background-color: #0099ff;
+    border: none;
+    border-radius: 360px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: none;
+}
+
+#send2:hover {
+    background-color: #0077cc;
+}
+
+
+/*Fim - Mensagens recebidas e enviadas*/
+
+/*Início - Responsividade - Aba Aba de Mensagens*/
+
+@media screen and (max-width: 1024px) {
+    .conversation-list {
+        flex: 0.5;
+    }
+}
+
+/*Início - Responsividade - Tablet - Aba de Mensagens*/
+
+@media screen and (max-width: 860px) {
+
+  .conversation-info h3 {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+    .conversation-list {
+        flex: 0.5;
+    }
+}
+
+/*Fim - Responsividade - Tablet - Aba de Mensagens*/
+
+
+/*Início - Responsividade - Celulares - Aba de Mensagens*/
+
+@media screen and (max-width: 600px) {
+    .message-input {
+        margin-bottom: 40px;
+    }
+
+    .conversation-info h3 {
+        display: none;
+    }
+
+    .conversation-info img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .conversation-list {
+        flex: 0.3;
+    }
+
+    #send {
+        display: none;
+    }
+
+    #send2 {
+        display: inherit;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    #message {
+        width: 7px;
+    }
+
+    .conversation {
+        padding: 0;
+    }
+
+    .conversation img{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .menu {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .menu {
+        margin-left: 10px;
+    }
+
+    .conversation img{
+        margin-left: 5px;
+    }
+}
+/*Fim - Responsividade - Celulares - Aba de Mensagens*/
+
+/*Fim - Responsividade - Aba de Mensagens*/
+
+/*Fim - Aba de Mensagens*/
+
+
+/*Início - Aba de Perfil*/
+
+/* Menu da página principal */
+
+a.config-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px 0;
+}
+
+
+a.config-menu:hover {
+    background-color: #454545;
+    border-radius: 5px;
+}
+
+/* página configurações */
+
+h1.config-title {
+    font-size: 25px;
+    text-align: left;
+    margin-left: 40px;
+    margin-bottom: 60px;
+}
+
+.config-form {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.config-form_row,
+.config-form_first-row {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 35px;
+    margin-bottom: 35px;
+}
+
+.config-form_first-row .config-form_input-label {
+    margin-right: 15px;
+}
+
+.config-form_first-row .config-form_input {
+    margin-left: 15px;
+}
+
+.config-form_first-row .config-form_input-label .config-form_profile-img {
+    background: #FFF;
+    border-radius: 100%;
+    height: 50px;
+}
+
+.config-form_first-row #select-image {
+    display: none;
+}
+
+.config-form_first-row label[for="select-image"] {
+    cursor: pointer;
+    color: rgb(0, 149, 246);
+}
+
+.config-form_row {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.config-form_row .config-form_input {
+    width: 90%;
+}
+
+.config-form_row .config-form_input input,
+.config-form_row .config-form_input textarea,
+.config-form_row .config-form_input select {
+    background: rgb(38, 38, 38);
+    border: none;
+    width: 100%;
+    min-height: 30px;
+    padding: 5px;
+    outline: none;
+    color: #FFF;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.config-form_row .config-form_input textarea {
+    resize: none;
+}
+
+.config-form_row .config-form_input select {
+    padding: 10px;
+}
+
+.config-form_row .config-form_input-label {
+    margin-bottom: 15px;
+}
+
+.config-button {
+    background-color: rgb(0, 149, 246);
+    color: #FFF;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    .config-main {
+        padding-left: 60px;
+    }
+}
+
+@media only screen and (min-width: 912px) {
+    .config-main {
+        padding-left: 180px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .config-main {
+        padding-left: 22vw;
+    }
+
+    .config-form_row {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .config-form_row .config-form_input-label {
+        margin-right: 15px;
+        width: 10%;
+        text-align: left;
+    }
+
+    .config-form_row .config-form_input {
+        width: 60%;
+        margin-left: 15px;
+    }
+
+    .config-form_row .config-form_input textarea {
+        resize: horizontal;
+    }
+}
+
+/*Fim - Aba de Perfil*/
+
+
+
+
+
+
+
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background-color: #454545;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .popup-close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .popup-photo {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin: 10px auto;
+    border: 1px solid white;
+  }
+  
+  .popup-name {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .popup-bio {
+    width: 300px;
+    color: white;
+    font-size: 14px;
+    word-break: break-word;
+  }
+
+  .btnperfil {
+    width: 150px;
+    height: 25px;
+    margin-top: 15px;
+    color: white;
+    background-color: #2e82f0;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.btnperfil:hover {
+    background-color: #16488a;
+}

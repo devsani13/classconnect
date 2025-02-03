@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/stylecperfil.css" />
+    <link rel="icon" href="Imagens/icone.ico" type="image/png">
+    <title>Class Connect</title>
+</head>
+
+<body>
+    <div class="pai">
+        <div class="filho">
+            <a href="cadastro.html" id="vol">
+            <button type="button" class="voltar">Voltar</button>
+            </a>
+            <label class="foto" tabindex="0">
+                <p id="txtfoto">Escolher foto de perfil</p>
+                <img id="semfoto" src="Imagens/Profile.png">
+                <input type="file" accept="image/*" class="escolherfoto" id="escolherfoto">
+                <span class="imagem"></span>
+            </label>
+            <button type="button" class="remover" onclick="Remover()">Remover foto</button>
+            <form class="cperfil" method="post" action="index.html">
+                <input type="text" id="nomeperfil" class="campo" placeholder="Nome de usuário" maxlength="34" required>
+                <div id="contador">
+                    <span id="atual" class="texto">0</span>
+                    <span id="maximo" class="texto">/ 34</span>
+                </div>
+                <textarea name="biografia" id="biografia" class="bio" placeholder="Biografia" style="resize: none;"
+                    maxlength="255"></textarea>
+                <div id="contador2">
+                    <span id="atual2" class="texto">0</span>
+                    <span id="maximo2" class="texto">/ 255</span>
+                </div>
+                <button type="submit" class="cadastrar">Cadastrar-se</button>
+        </div>
+    </div>
+    </form>
+
+    <script type="text/javascript" src="JS/configcperfil.js"></script>
+
+</body>
+
+</html>
